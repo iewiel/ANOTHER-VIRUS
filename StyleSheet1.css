@@ -1,0 +1,144 @@
+﻿
+/* =========================
+   PIN LOCK PAGE
+========================= */
+
+.pin-card {
+    width: min(500px, 92vw);
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(70, 25, 35, 0.95),
+            rgba(25, 12, 17, 0.97)
+        );
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.6),
+        inset 0 0 50px rgba(255,255,255,0.02);
+}
+
+
+.pin-card h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(35px, 7vw, 55px);
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+
+.pin-subtitle {
+    font-size: 18px;
+
+    opacity: 0.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PIN DOTS
+========================= */
+
+.pin-display {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 25px 0 30px;
+}
+
+
+.pin-dot {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    transition: 0.2s;
+}
+
+
+.pin-dot.filled {
+    background: #f8e9e8;
+
+    box-shadow:
+        0 0 10px rgba(248,233,232,0.4);
+}
+
+
+/* =========================
+   KEYPAD
+========================= */
+
+.keypad {
+    width: 270px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.keypad button {
+    width: 75px;
+    height: 55px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: #f8e9e8;
+
+    font-size: 20px;
+
+    transition: 0.2s;
+}
+
+
+.keypad button:hover {
+    background: rgba(255,255,255,0.15);
+
+    transform: scale(1.05);
+}
+
+
+.keypad button:active {
+    transform: scale(0.92);
+}
+
+
+.keypad .empty-key {
+    visibility: hidden;
+}
+
+
+#pinMessage {
+    margin-top: 12px;
+
+    min-height: 20px;
+
+    font-size: 15px;
+}
+
